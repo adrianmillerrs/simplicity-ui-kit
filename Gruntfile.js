@@ -22,15 +22,26 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 9001,
+          hostname: 'localhost',
           base: 'app'
         }
+      }
+    },
+    open: {
+      server: {
+        path: 'http://localhost:<%= connect.server.options.port%>'
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('server', ['connect','watch']);
+  grunt.registerTask('server', [
+    'open',
+    'connect',
+    'watch'
+  ]);
 }

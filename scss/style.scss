@@ -1,5 +1,3 @@
-$background: #fff;
+$base-background-color: #fff;
 
-body {
-  background-color: $background;
-}
+body { background-color: $base-background-color; color: red; }
