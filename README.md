@@ -4,13 +4,14 @@
 
 ### Installation
 
-        npm install
+    npm install
 
-        bower install
+
+    bower install
 
 ### Usage
 
-        grunt server
+    grunt server
 
 ## Stylesheet scss structure
 
