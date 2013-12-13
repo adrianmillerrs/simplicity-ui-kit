@@ -10,7 +10,7 @@ nav li {
 }
 
 .horizontal-nav {
-	@extend %clearfix;
+	@include clearfix;
 	li {
 		float: left;
 		padding: 0 $pad/2;
