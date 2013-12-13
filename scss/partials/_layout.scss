@@ -1,27 +1,48 @@
-#header {
+header {
   width: 100%;
   height: 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000
+  &[role="header"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000
+  }
 }
 
-#left_sidebar {
-  width: 220px;
+[role="main"] {
+  margin: 0;
+  padding-left: 200px;
+  padding-top: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 20px;
+  &[role="footer"] {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+}
+
+[role="sidebar"] {
+  width: 200px;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 40px;
+  padding-top: 36px;
   z-index: 999;
 }
 
-#main {
-  margin: 0;
-  padding-left: 220px;
-  padding-top: 40px;
-  height: 100%
+.left_sidebar-hidden {
+  [role="main"] {
+    padding-left: 0;
+  }
+  [role="sidebar"] {
+    display: none;
+  }
 }
 
 #logo {
@@ -29,13 +50,4 @@
   position: absolute;
   left: 0;
   top: 0;
-}
-
-#footer {
-  width: 100%;
-  height: 20px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1000
 }
