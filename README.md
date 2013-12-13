@@ -4,12 +4,17 @@
 
 ### Installation
 
+Install node modules
+
     npm install
 
+Install bower components
 
     bower install
 
 ### Usage
+
+Run a server and begin watching scss files
 
     grunt server
 
