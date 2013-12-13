@@ -20,7 +20,7 @@ Run a server and begin watching scss files
 
 ## Stylesheet scss structure
 
-http://thesassway.com/beginner/how-to-structure-a-sass-project
+[thesassway.com/beginner/how-to-structure-a-sass-project](http://thesassway.com/beginner/how-to-structure-a-sass-project)
 
     stylesheets/
     |
@@ -40,4 +40,4 @@ http://thesassway.com/beginner/how-to-structure-a-sass-project
     |   |-- bourbon
     |   ...
     |
-    `-- style.scss            # primary Sass file
+    |-- style.scss            # primary Sass file
