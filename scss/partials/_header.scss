@@ -1,3 +1,5 @@
+// Retina ready mixin
+
 @mixin image-2x($image, $width, $height) {
   @media (min--moz-device-pixel-ratio: 1.3),
          (-o-min-device-pixel-ratio: 2.6/2),
@@ -10,69 +12,78 @@
   }
 }
 
-.topbar { background-color: #0C5CA6; height: 40px;
+.topbar {
+  background-color: #0C5CA6;
+  height: 40px;
   > .topbar-logo {
-    width: 220px;
-    height: 40px;
     background: url("../images/logo.png") no-repeat;
     @include image-2x("../images/logo@2x.png", 160px, 24px);
     background-repeat: no-repeat;
     background-position: 10px 8px;
+    width: 220px;
+    height: 40px;
   }
   > .topbar-search {
-    position: absolute; top: 6px; left: 220px;
-    border-radius: 3px;
+    position: absolute;
+    top: 6px;
+    left: 220px;
     width: 220px;
-    border: 0 none;
-    box-shadow: none;
     height: 28px;
-    font-size: 13px;
     padding: 9px;
+    border: 0 none;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    font-size: 13px;
+    box-shadow: none;
     &:focus {
       box-shadow: none;
       outline: 0 none;
     }
   }
   > .topbar-nav {
+    position: absolute;
+    top: 0;
+    left: 446px;
     width: 211px;
-    margin: 0; padding: 0;
-    position: absolute; top: 0; left: 446px;
+    margin: 0;
+    padding: 0;
     z-index: 1001;
     list-style: none;
     li {
       float: left;
       &.top-nav-active > a {
-        -webkit-transition: all 0 ease-in 0;
-                transition: all 0 ease-in;
+        @include transition (all 0 ease-in 0);
         background-color: #023362;
       }
       > a {
+        @include transition (all 0.1s ease-in 0);
         display: block;
         padding: 10px 12px 12px;
         font-size: 13px;
         font-weight: 400;
         color: #fff;
-        -webkit-transition: all 0.1s ease-in 0;
-                transition: all 0.1s ease-in;
         text-decoration: none;
         &:hover {
-          text-decoration: none;
           background-color: #023362;
+          text-decoration: none;
         }
       }
     }
   }
   > .topbar-secondary-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 148px;
-    margin: 0; padding: 0;
-    position: absolute; top: 0; right: 0;
+    margin: 0;
+    padding: 0;
     z-index: 1001;
     list-style: none;
     li {
       float: left;
       &.top-nav-active > a {
-        -webkit-transition: all 0 ease-in 0;
-                transition: all 0 ease-in;
+        @include transition (all 0 ease-in 0);
         background-color: #023362;
       }
       &.topbar-settings > a {
@@ -80,13 +91,12 @@
         font-size: 20px;
       }
       > a {
+        @include transition (all 0.1s ease-in 0);
         display: block;
         padding: 10px 12px 12px;
         font-size: 13px;
         font-weight: 400;
         color: #fff;
-        -webkit-transition: all 0.1s ease-in 0;
-                transition: all 0.1s ease-in;
         text-decoration: none;
         &:hover {
           text-decoration: none;
