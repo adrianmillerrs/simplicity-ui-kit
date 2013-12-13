@@ -1,3 +1,10 @@
-$base-background-color: #fff;
+@import 'vendor/bourbon/bourbon';
+@import 'partials/base';
 
-body { background-color: $base-background-color; color: red; }
+* {
+  margin: 0;
+}
+html, body, .app-wrapper {
+  height: 100%;
+}
+

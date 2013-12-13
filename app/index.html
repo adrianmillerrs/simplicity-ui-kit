@@ -3,9 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Simplicity UI Kit</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.css">
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-  dude
+  <div class="app-wrapper">
+    <div id="header" class="topbar">
+      <div id="logo" class="topbar-logo">RightScale</div>
+      <input type="text" id="top-nav-search" class="topbar-search" placeholder="Search" tabindex="1">
+      <ul class="topbar-nav">
+        <li class="topbar-manage"><a href="#">Manage</a></li>
+        <li class="topbar-design"><a href="#">Design</a></li>
+      </ul>
+      <ul class="topbar-secondary-nav">
+        <li class="topbar-accounts"><a href="#">Account Name</a></li>
+        <li class="topbar-settings"><a href="#"><i class="icon ion-gear-a"></i></a></li>
+      </ul>
+    </div>
+    <div id="left_sidebar">
+      <div class="sidebar-group">
+
+      </div>
+    </div>
+    <div id="main">
+      <div id="content" class="page-wrap">
+        app
+      </div>
+      <div id="main-footer" class="site-footer">footer</div>
+    </div>
+  </div>
+
 </body>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/jquery/jquery.js"></script>
 </html>
