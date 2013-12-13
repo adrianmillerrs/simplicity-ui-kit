@@ -1,0 +1,10 @@
+{
+  "name": "simplicity-ui-kit",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "ionicons": "~1.4.0"
+  }
+}
