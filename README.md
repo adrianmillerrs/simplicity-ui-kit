@@ -1,5 +1,17 @@
 # Simplicity UI Kit
 
+## Get Started
+
+### Installation
+
+        npm install
+
+        bower install
+
+### Usage
+
+        grunt server
+
 ## Stylesheet scss structure
 
 http://thesassway.com/beginner/how-to-structure-a-sass-project
