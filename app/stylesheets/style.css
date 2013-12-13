@@ -207,9 +207,14 @@ nav li.cursor a:hover {
   background-color: #023362;
 }
 
-#left_sidebar {
+.left-sidebar {
   background-color: #F1F2F4;
   border-right: 1px solid #778597;
+}
+.left-sidebar .left-sidebar-toggle .icon {
+  font-size: 27px;
+  float: right;
+  margin-right: 8px;
 }
 
 html, body {
