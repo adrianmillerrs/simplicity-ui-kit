@@ -12,7 +12,7 @@ button {
 }
 
 .buttons {
-	@extend %clearfix;
+	@include clearfix;
 	display: inline-block;
 	vertical-align: top;
 

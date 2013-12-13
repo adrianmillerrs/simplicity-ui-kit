@@ -1,14 +1,31 @@
-#header {
+.topbar > .topbar-search {
+  border-radius: 3px;
+}
+
+header {
   width: 100%;
   height: 40px;
+}
+header[role="header"] {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
 }
 
-#left_sidebar {
-  width: 220px;
+[role="main"] {
+  margin: 0;
+  padding-left: 200px;
+  padding-top: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 20px;
+}
+
+[role="sidebar"] {
+  width: 200px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -17,11 +34,11 @@
   z-index: 999;
 }
 
-#main {
-  margin: 0;
-  padding-left: 220px;
-  padding-top: 40px;
-  height: 100%;
+.left_sidebar-hidden [role="main"] {
+  padding-left: 0;
+}
+.left_sidebar-hidden [role="sidebar"] {
+  display: none;
 }
 
 #logo {
@@ -29,15 +46,6 @@
   position: absolute;
   left: 0;
   top: 0;
-}
-
-#footer {
-  width: 100%;
-  height: 20px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
 }
 
 h1, h2, h3, h4, h5 {
@@ -57,8 +65,16 @@ button.disabled {
 }
 
 .buttons {
+  *zoom: 1;
   display: inline-block;
   vertical-align: top;
+}
+.buttons:before, .buttons:after {
+  content: " ";
+  display: table;
+}
+.buttons:after {
+  clear: both;
 }
 .buttons button {
   float: left;
@@ -100,18 +116,16 @@ nav li.cursor a:hover {
 
 .topbar {
   background-color: #0C5CA6;
-  height: 40px;
 }
 .topbar > .topbar-logo {
-  background: url("../images/logo.png") no-repeat;
+  background-image: url("../images/logo.png");
   background-repeat: no-repeat;
   background-position: 10px 8px;
   width: 220px;
   height: 40px;
 }
-@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   .topbar > .topbar-logo {
-    /* on retina, use image that's scaled by 2 */
     background-image: url("../images/logo@2x.png");
     background-size: 160px 24px;
   }
@@ -124,9 +138,6 @@ nav li.cursor a:hover {
   height: 28px;
   padding: 9px;
   border: 0 none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
   font-size: 13px;
   box-shadow: none;
 }
@@ -134,7 +145,8 @@ nav li.cursor a:hover {
   box-shadow: none;
   outline: 0 none;
 }
-.topbar > .topbar-nav {
+
+.topbar-nav {
   position: absolute;
   top: 0;
   left: 446px;
@@ -144,16 +156,16 @@ nav li.cursor a:hover {
   z-index: 1001;
   list-style: none;
 }
-.topbar > .topbar-nav li {
+.topbar-nav li {
   float: left;
 }
-.topbar > .topbar-nav li.top-nav-active > a {
+.topbar-nav li.top-nav-active > a {
   -webkit-transition: all 0 ease-in 0;
   -moz-transition: all 0 ease-in 0;
   transition: all 0 ease-in 0;
   background-color: #023362;
 }
-.topbar > .topbar-nav li > a {
+.topbar-nav li > a {
   -webkit-transition: all 0.1s ease-in 0;
   -moz-transition: all 0.1s ease-in 0;
   transition: all 0.1s ease-in 0;
@@ -164,11 +176,12 @@ nav li.cursor a:hover {
   color: #fff;
   text-decoration: none;
 }
-.topbar > .topbar-nav li > a:hover {
+.topbar-nav li > a:hover {
   background-color: #023362;
   text-decoration: none;
 }
-.topbar > .topbar-secondary-nav {
+
+.topbar-secondary-nav {
   position: absolute;
   top: 0;
   right: 0;
@@ -178,20 +191,20 @@ nav li.cursor a:hover {
   z-index: 1001;
   list-style: none;
 }
-.topbar > .topbar-secondary-nav li {
+.topbar-secondary-nav li {
   float: left;
 }
-.topbar > .topbar-secondary-nav li.top-nav-active > a {
+.topbar-secondary-nav li.top-nav-active > a {
   -webkit-transition: all 0 ease-in 0;
   -moz-transition: all 0 ease-in 0;
   transition: all 0 ease-in 0;
   background-color: #023362;
 }
-.topbar > .topbar-secondary-nav li.topbar-settings > a {
+.topbar-secondary-nav li.topbar-settings > a {
   padding: 6px 12px;
   font-size: 20px;
 }
-.topbar > .topbar-secondary-nav li > a {
+.topbar-secondary-nav li > a {
   -webkit-transition: all 0.1s ease-in 0;
   -moz-transition: all 0.1s ease-in 0;
   transition: all 0.1s ease-in 0;
@@ -202,7 +215,7 @@ nav li.cursor a:hover {
   color: #fff;
   text-decoration: none;
 }
-.topbar > .topbar-secondary-nav li > a:hover {
+.topbar-secondary-nav li > a:hover {
   text-decoration: none;
   background-color: #023362;
 }

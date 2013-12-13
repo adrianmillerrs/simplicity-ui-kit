@@ -9,7 +9,9 @@
 </head>
 <body>
   <div class="app-wrapper">
-    <div id="header" class="topbar">
+
+    <!-- Header -->
+    <header role="header" class="topbar">
       <div id="logo" class="topbar-logo"><a href="/">RightScale</a></div>
       <input type="text" id="top-nav-search" class="topbar-search" placeholder="Search" tabindex="1">
       <ul class="topbar-nav">
@@ -20,21 +22,24 @@
         <li class="topbar-accounts"><a href="#">Account Name</a></li>
         <li class="topbar-settings"><a href="#"><i class="icon ion-gear-a"></i></a></li>
       </ul>
-    </div>
-    <div class="left-sidebar" id="left_sidebar">
+    </header>
+
+    <!-- Sidebar -->
+    <div role="sidebar" id="left_sidebar">
       <div class="left-sidebar-toggle">
         <a href="#"><i class="icon ion-navicon"></i></a>
       </div>
     </div>
-    <div id="main">
+
+    <!-- Main -->
+    <div role="main">
       <div id="content" class="page-wrap">
         app
       </div>
-      <div id="main-footer" class="site-footer">footer</div>
+      <footer role="footer" class="site-footer">footer</footer>
     </div>
   </div>
-
 </body>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </html>
