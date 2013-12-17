@@ -1,17 +1,8 @@
+// Padding
 $pad: 16px;
 
-// Base
-@import "base/base";
-
-// Partials
+// Modules
 @import "modules/colors";
 @import "modules/utilities";
 
-// Modules
-@import "partials/styles";
-@import "partials/typography";
-@import "partials/header";
-@import "partials/sidebars";
-@import "partials/logo";
-@import "partials/content";
-@import "partials/titlebar";
+

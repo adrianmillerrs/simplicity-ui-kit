@@ -1,10 +1,11 @@
 .topbar {
   background-color: #0C5CA6;
 
-  > .topbar-logo {
+  > .topbar-logo > a {
     @include retina-image("../images/logo", 160px 24px);
     background-repeat: no-repeat;
     background-position: 10px 8px;
+    display: block;
     width: 220px;
     height: 40px;
   }
@@ -58,7 +59,7 @@
       font-weight: 400;
       color: #fff;
       text-decoration: none;
-      
+
       &:hover {
         background-color: #023362;
         text-decoration: none;
