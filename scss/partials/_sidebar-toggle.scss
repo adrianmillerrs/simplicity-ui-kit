@@ -1,3 +1,10 @@
 .left-sidebar-toggle {
   @include clearfix;
+  border-bottom: 1px solid #DCDFE2;
+  > a {
+    color: #5F6A78;
+    &:hover {
+      color: shade(#5F6A78, 50%);
+    }
+  }
 }

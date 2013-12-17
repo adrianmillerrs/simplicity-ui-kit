@@ -14,6 +14,7 @@ header[role="header"] {
 }
 
 [role="main"] {
+  height: 100%;
   margin: 0;
   padding-left: 200px;
   padding-top: 40px;
@@ -56,12 +57,12 @@ html, body {
   display: block;
 }
 
-.site-footer, .page-wrap:after {
+.main-footer, .page-wrap:after {
   /* .push must be the same height as footer */
   height: 20px;
 }
 
-.site-footer {
+.main-footer {
   background: #fff;
 }
 
@@ -257,6 +258,7 @@ h1, h2, h3, h4, h5 {
 
 .left-sidebar-toggle {
   *zoom: 1;
+  border-bottom: 1px solid #DCDFE2;
 }
 .left-sidebar-toggle:before, .left-sidebar-toggle:after {
   content: " ";
@@ -264,6 +266,12 @@ h1, h2, h3, h4, h5 {
 }
 .left-sidebar-toggle:after {
   clear: both;
+}
+.left-sidebar-toggle > a {
+  color: #5F6A78;
+}
+.left-sidebar-toggle > a:hover {
+  color: #2f353c;
 }
 
 .left-sidebar .nav > li.active > a {
@@ -273,7 +281,7 @@ h1, h2, h3, h4, h5 {
   padding: 5px 10px;
 }
 .left-sidebar .nav li > a:hover {
-  background-color: #c9cdd4;
+  background-color: #DCDFE2;
 }
 .left-sidebar .nav .nav > li > a {
   padding-top: 3px;
@@ -286,6 +294,9 @@ h1, h2, h3, h4, h5 {
   height: 100%;
 }
 
+.titlebar {
+  padding: 8px 15px;
+}
 .titlebar .titlebar-title {
   color: #313233;
   font-family: "proxima-nova",sans-serif;
