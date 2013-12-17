@@ -10,10 +10,10 @@ html, body {
   content: "";
   display: block;
 }
-.site-footer, .page-wrap:after {
+.main-footer, .page-wrap:after {
   /* .push must be the same height as footer */
   height: 20px;
 }
-.site-footer {
+.main-footer {
   background: #fff;
 }

@@ -1,5 +1,35 @@
+// Bourbon
 @import 'vendor/bourbon/bourbon';
-@import 'partials/base';
+
+// Modules and Variables
+@import "partials/base";
+
+// Extends
+@import "extends/styles";
+
+// Base layouts and buttons
+@import "partials/base/base";
+
+// Partials
+@import "partials/typography";
+@import "partials/header";
+@import "partials/logo";
+@import "partials/sidebars";
+@import "partials/sidebar-toggle";
+@import "partials/left-sidebar-menu";
+@import "partials/content";
+@import "partials/titlebar";
+
+// Overrides
+[role="main"] {
+  padding-left: 220px;
+}
+
+[role="sidebar"] {
+  width: 220px;
+}
+
+// Styles
 
 * {
   margin: 0;
