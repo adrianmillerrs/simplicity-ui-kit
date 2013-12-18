@@ -1,9 +1,13 @@
 @import "vars";
 @import "classes";
+@import "html5";
+//Layout
 @import "header";
 @import "sidebar";
-@import "layout";
+@import "main";
 @import "footer";
+//HTML
 @import "navigation";
 @import "buttons";
-@import "sidebar_toggle";
+// OPT IN
+@import "grid";

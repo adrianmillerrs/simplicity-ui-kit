@@ -6,12 +6,21 @@
   left: 0;
   padding-top: 40px;
   z-index: 999;
-  background-color: lightgray;
-  @include background-image(linear-gradient(to left, rgba(#999, 1) 0%, rgba(#999, .5) 1%, rgba(#fff, 0) 5%));
+  background-color: #353b41;
+  @include background-image(linear-gradient(to left, rgba(black, 1) 0%, rgba(black, .5) 1%, rgba(black, 0) 5%));
 }
 
 [role="sidebar"] .left-sidebar-toggle {
 	position: absolute;
 	top: 4px;
 	right: 8px;
+}
+
+.left_sidebar-hidden {
+  [role="main"] {
+    padding-left: 0;
+  }
+  [role="sidebar"] {
+    display: none;
+  }
 }

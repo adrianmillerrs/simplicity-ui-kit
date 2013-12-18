@@ -11,6 +11,8 @@
 	background-position: center;
 }
 
+.icon { font-size: 20px }
+
 .float-left {
 	float: left;
 }
@@ -65,6 +67,7 @@
 		display: block;
 		padding: $pad/2;
 		position: relative;
+		color: #fff;
 	}
 	&:after {
 			content: "";
@@ -72,7 +75,7 @@
 			bottom: 0;
 			left: 0;
 			width: 100%;
-			border-bottom: solid thin rgba(black, 0.5);
+			border-bottom: solid thin rgba(black, 0.2);
 		}
 	&:before {
 		content: "";
@@ -80,7 +83,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		border-top: solid thin rgba(white, 0.5);
+		border-top: solid thin rgba(white, 0.2);
 	}
 
 	.sub-menu {
@@ -95,7 +98,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			border-top: solid thin rgba(black, 0.5);
+			border-top: solid thin rgba(black, 0.2);
 		}
 		&:after {
 			content: "";
@@ -103,7 +106,7 @@
 			bottom: 0;
 			left: 0;
 			width: 100%;
-			border-bottom: solid thin rgba(white, 0.5);
+			border-bottom: solid thin rgba(white, 0.2);
 		}
 	}
 }
