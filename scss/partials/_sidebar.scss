@@ -1,0 +1,17 @@
+[role="sidebar"] {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 40px;
+  z-index: 999;
+  background-color: lightgray;
+  @include background-image(linear-gradient(to left, rgba(#999, 1) 0%, rgba(#999, .5) 1%, rgba(#fff, 0) 5%));
+}
+
+[role="sidebar"] .left-sidebar-toggle {
+	position: absolute;
+	top: 4px;
+	right: 8px;
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Simplicity UI Kit</title>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
   <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.css">
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
@@ -11,36 +11,45 @@
   <div class="app-wrapper">
 
     <!-- Header -->
-    <header role="header" class="topbar">
-      <div id="logo" class="topbar-logo"><a href="/">RightScale</a></div>
-      <input type="text" class="topbar-search" placeholder="Search" tabindex="1">
-      <ul class="topbar-nav">
-        <li class="topbar-manage"><a href="#">Manage</a></li>
-        <li class="topbar-design"><a href="#">Design</a></li>
-      </ul>
-      <ul class="topbar-secondary-nav">
-        <li class="topbar-accounts"><a href="#">Account Name</a></li>
-        <li class="topbar-settings"><a href="#"><i class="icon ion-gear-a"></i></a></li>
-      </ul>
+    <header role="header" class="blue">
+      <div class="container-logo logo"><a href="/">RightScale</a></div>
+      <nav class="nav">
+        <ul class="horizontal-nav">
+          <li class="menu-style-1"><a href="#">Manage</a></li>
+          <li class="menu-style-1"><a href="#">Design</a></li>
+        </ul>
+      </nav>
+      <nav class="float-right">
+        <ul class="horizontal-nav">
+          <li class="menu-style-1"><a href="#">Account Name</a></li>
+          <li class="menu-style-1"><a href="#"><i class="icon ion-gear-a"></i></a></li>
+        </ul>
+      </nav>
+      <div class="container-search float-right">
+        <input type="search" class="topbar-search" placeholder="Search" tabindex="1">
+        <i class="icon ion-search"></i>
+      </div>
     </header>
 
     <!-- Sidebar -->
     <div role="sidebar" class="left-sidebar">
-      <div class="left-sidebar-toggle">
-        <a href="#"><i class="icon ion-navicon"></i></a>
-      </div>
-      <div>
-        <ul class="nav">
-          <li class="active"><a href="">Item 1</a>
-          <ul class="nav">
-            <li><a href="#">Sub item 1</a></li>
-            <li><a href="#">Sub item 2</a></li>
-            <li><a href="#">Sub item 3</a></li>
+      <div class="container">
+        <div class="left-sidebar-toggle">
+          <a href="#"><i class="icon ion-navicon"></i></a>
+        </div>
+        <nav>
+          <ul>
+            <li class="menu-style-2" class="active"><a href="">Item 1</a>
+            <ul class="sub-menu">
+              <li><a href="#">Sub item 1</a></li>
+              <li><a href="#">Sub item 2</a></li>
+              <li><a href="#">Sub item 3</a></li>
+            </ul>
+            </li>
+            <li class="menu-style-2"><a href="">Item 2</a></li>
+            <li class="menu-style-2"><a href="">Item 3</a></li>
           </ul>
-          </li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Item 3</a></li>
-        </ul>
+        </nav>
       </div>
     </div>
 

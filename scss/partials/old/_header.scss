@@ -1,0 +1,114 @@
+.topbar {
+  background-color: #0C5CA6;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 18px;
+
+  > .topbar-logo > a {
+    @include retina-image("../images/logo", 160px 24px);
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+    display: block;
+    width: 220px;
+    height: 40px;
+    text-indent: -999999px;
+  }
+
+  > .topbar-search {
+    @extend %border-radius;
+    position: absolute;
+    top: 6px;
+    left: 220px;
+    width: 220px;
+    height: 28px;
+    padding: 9px;
+    border: 0 none;
+    font-size: 13px;
+    box-shadow: none;
+    box-sizing: border-box;
+
+    .search-icon {
+      margin-left: -20px;
+    }
+
+    &:focus {
+      box-shadow: none;
+      outline: 0 none;
+    }
+  }
+}
+
+.topbar-nav {
+  position: absolute;
+  top: 0;
+  left: 446px;
+  width: 211px;
+  margin: 0;
+  padding: 0;
+  z-index: 1001;
+  list-style: none;
+
+  li {
+    float: left;
+
+    &.top-nav-active > a {
+      @include transition (all 0 ease-in 0);
+      background-color: #023362;
+    }
+
+    > a {
+      @include transition (all 0.1s ease-in 0);
+      display: block;
+      padding: 10px 12px 12px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #023362;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.topbar-secondary-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 148px;
+  margin: 0;
+  padding: 0;
+  z-index: 1001;
+  list-style: none;
+
+  li {
+    float: left;
+
+    &.top-nav-active > a {
+      @include transition (all 0 ease-in 0);
+      background-color: #023362;
+    }
+
+    &.topbar-settings > a {
+      padding: 6px 12px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    > a {
+      @include transition (all 0.1s ease-in 0);
+      display: block;
+      padding: 10px 12px 12px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #023362;
+      }
+    }
+  }
+}
