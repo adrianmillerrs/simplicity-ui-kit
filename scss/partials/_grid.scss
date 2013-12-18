@@ -1,25 +1,3 @@
-
-
-// .grid {
-// 	@include outer-container;
-// }
-
-// .col-1-2  { @include span-columns(6) }
-
-// .col-1-3  { @include span-columns(4) }
-
-// .col-2-3  { @include span-columns(8) }
-
-// .col-1-4  { @include span-columns(3) }
-
-// .col-3-4  { @include span-columns(9) }
-
-// .col-1-6  { @include span-columns(2) }
-
-// .col-1-12 { @include span-columns(1) }
-
-// .grid > [class^="col-"]:last-of-type { @include omega() }
-
 @mixin grid-base($pad: 1em) {
 	@include box-sizing(border-box);
 
@@ -65,10 +43,7 @@
 	    padding-right: $pad;
 	  }
 	}
-}
 
-@mixin container-width($media-full: 1080px, $media-screen: 920px, $media-tablet: 720px, $media-mobile: 360px) {
-	
 	@media screen and (min-width: $media-mobile)  {
 		.mobile-half {
 			max-width: 50%;
@@ -142,16 +117,4 @@
 			max-width: percentage(7/8);
 		}
 	}	
-	
-	@media screen and (min-width: $media-screen)  {
-		.container {
-			// max-width: $media-screen;
-		}
-	}
-	
-	@media screen and (min-width: $media-full)  {
-		.container {
-			// max-width: $media-full;
-		}
-	}
 }

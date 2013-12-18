@@ -3212,19 +3212,19 @@ html {
   float: right;
 }
 
-.container-search {
+.search {
   display: inline-block;
 }
-.container-search [type="search"] {
+.search [type="search"] {
   border: none;
   height: 30px;
   margin: 5px 0;
   padding: 0 .5em;
 }
-.container-search [type="search"]:focus {
+.search [type="search"]:focus {
   outline: none;
 }
-.container-search .icon {
+.search .icon {
   margin-left: -24px;
   font-size: 18px;
 }
@@ -3295,10 +3295,6 @@ html {
   left: 0;
   width: 100%;
   border-bottom: solid thin rgba(255, 255, 255, 0.2);
-}
-
-header, footer {
-  width: 100%;
 }
 
 [role="header"] {
@@ -3383,6 +3379,10 @@ html, body {
   background: #fff;
 }
 
+header, footer {
+  width: 100%;
+}
+
 nav li a {
   text-decoration: none;
 }
@@ -3445,7 +3445,7 @@ button.disabled {
   margin-right: 0;
 }
 
-.container-search [type="search"] {
+.search [type="search"] {
   border-radius: 3px;
 }
 
