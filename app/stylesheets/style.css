@@ -134,6 +134,8 @@ h1, h2, h3, h4, h5 {
 
 .topbar {
   background-color: #0C5CA6;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 18px;
 }
 .topbar > .topbar-logo > a {
   background-image: url("../images/logo.png");
@@ -160,6 +162,7 @@ h1, h2, h3, h4, h5 {
   border: 0 none;
   font-size: 13px;
   box-shadow: none;
+  box-sizing: border-box;
 }
 .topbar > .topbar-search .search-icon {
   margin-left: -20px;
@@ -226,6 +229,7 @@ h1, h2, h3, h4, h5 {
 .topbar-secondary-nav li.topbar-settings > a {
   padding: 6px 12px;
   font-size: 20px;
+  line-height: 28px;
 }
 .topbar-secondary-nav li > a {
   -webkit-transition: all 0.1s ease-in 0;
