@@ -3290,17 +3290,17 @@ nav li.cursor a:hover {
   cursor: default;
 }
 
-.horizontal-nav {
+[role="header"] nav ul {
   *zoom: 1;
 }
-.horizontal-nav:before, .horizontal-nav:after {
+[role="header"] nav ul:before, [role="header"] nav ul:after {
   content: " ";
   display: table;
 }
-.horizontal-nav:after {
+[role="header"] nav ul:after {
   clear: both;
 }
-.horizontal-nav li {
+[role="header"] nav ul li {
   float: left;
 }
 
@@ -3430,7 +3430,7 @@ button.disabled {
 
 [class*="-logo"] {
   text-indent: -99999em;
-  background-position: center;
+  background-position: 9px center;
   background-repeat: no-repeat;
 }
 

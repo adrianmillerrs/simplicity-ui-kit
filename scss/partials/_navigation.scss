@@ -10,7 +10,9 @@ nav li {
 	}
 }
 
-.horizontal-nav {
+// Header Nav 
+
+[role="header"] nav ul {
 	@include clearfix;
 	li {
 		float: left;
