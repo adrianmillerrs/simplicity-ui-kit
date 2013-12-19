@@ -15,8 +15,11 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: '**/*.scss',
-        tasks: ['sass']
-      }
+        tasks: ['sass'],
+        options: {
+          livereload: true,
+        },
+      },
     },
     connect: {
       server: {

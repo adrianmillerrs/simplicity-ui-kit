@@ -1,0 +1,19 @@
+[class*="-search"] {
+	display: inline-block;
+
+	[type="search"] {
+		@extend %round-corners;
+		border: none;
+		height: 30px;
+		margin: 5px 0;
+		padding: 0 .5em;
+		padding-right: 24px;
+		&:focus {
+			outline: none;
+		}
+	}
+	.icon {
+		margin-left: -24px;
+		color: $blue;
+	}
+}

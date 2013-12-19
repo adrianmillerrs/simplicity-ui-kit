@@ -1,0 +1,26 @@
+[role="sidebar"] {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 40px;
+  z-index: 999;
+  background-color: $gray-sidebar;
+  @include background-image(linear-gradient(to left, rgba(#aaa, 1) 0%, rgba(#aaa, .5) 1%, rgba(#aaa, 0) 3%));
+}
+
+[role="sidebar"] .left-sidebar-toggle {
+	position: absolute;
+	top: 4px;
+	right: 8px;
+}
+
+.left_sidebar-hidden {
+  [role="main"] {
+    padding-left: 0;
+  }
+  [role="sidebar"] {
+    display: none;
+  }
+}

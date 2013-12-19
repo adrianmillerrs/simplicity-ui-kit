@@ -1,8 +1,16 @@
-// Padding
-$pad: 16px;
-
-// Modules
-@import "modules/colors";
-@import "modules/utilities";
-
-
+@import "vars";
+@import "utl";
+//Layout
+@import "header";
+@import "sidebar";
+@import "main";
+@import "footer";
+//HTML
+@import "html5";
+@import "navigation";
+@import "buttons";
+@import "search";
+//Class 
+@import "logo";
+// OPT IN
+@import "grid";

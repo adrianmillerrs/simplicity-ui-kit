@@ -1,5 +1,6 @@
 // Bourbon
 @import "vendor/bourbon/bourbon";
+@import "vendor/vendor";
 
 // Modules and Variables
 @import "partials/base";
@@ -8,18 +9,18 @@
 @import "extends/styles";
 
 // Base layouts and buttons
-@import "partials/base/base";
+// @import "partials/base";
 
 // Partials
-@import "partials/typography";
-@import "partials/header";
-@import "partials/logo";
-@import "partials/sidebars";
-@import "partials/sidebar-toggle";
-@import "partials/left-sidebar-menu";
-@import "partials/content";
-@import "partials/titlebar";
-@import "partials/panels";
+// @import "partials/typography";
+// @import "partials/header";
+// @import "partials/logo";
+// @import "partials/sidebars";
+// @import "partials/sidebar-toggle";
+// @import "partials/left-sidebar-menu";
+// @import "partials/content";
+// @import "partials/titlebar";
+// @import "partials/panels";
 
 // Overrides
 [role="main"] {
