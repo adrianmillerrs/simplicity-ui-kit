@@ -6,7 +6,7 @@
   z-index: 1000;
   font-size: 0;
   height: $header-height;
-  
+
   & > * {
     display: inline-block;
     vertical-align: top;
@@ -14,14 +14,9 @@
   }
 }
 
-[role="header"] .container-logo {
+.topbar-logo-large {
 	width: $sidebar-width;
 	height: $header-height;
-	display: inline-block;
-}
-
-[role="header"] > * {
-	display: inline-block;
 }
 
 

@@ -1,5 +1,5 @@
 @import "vars";
-@import "classes";
+@import "utl";
 //Layout
 @import "header";
 @import "sidebar";
@@ -9,5 +9,8 @@
 @import "html5";
 @import "navigation";
 @import "buttons";
+@import "search";
+//Class 
+@import "logo";
 // OPT IN
 @import "grid";

@@ -1,3 +1,7 @@
-[role="header"] .logo {
-	width: $sidebar-width;
+[class*="-logo"] {
+	text-indent: -99999em;
+	background-position: center;
+	background-repeat: no-repeat;
 }
+
+[class*="-logo-large"] { @include retina-image("../images/logo", 160px 24px) }
